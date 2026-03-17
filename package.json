@@ -1,0 +1,31 @@
+{
+  "name": "panitasmusic",
+  "author": "gpablo6",
+  "version": "1.0.0",
+  "description": "A music bot for RootApp built using RootSDK.",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "bot": "rootsdk start devhost"
+  },
+  "dependencies": {
+    "@rootsdk/server-bot": "*"
+  },
+  "devDependencies": {
+    "@rootsdk/dev-tools": "*",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "music",
+    "bot",
+    "rootsdk"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "volta": {
+    "node": "24.14.0"
+  }
+}
