@@ -12,7 +12,9 @@
     "bot": "rootsdk start devhost"
   },
   "dependencies": {
-    "@rootsdk/server-bot": "*"
+    "@rootsdk/server-bot": "*",
+    "@spotify/web-api-ts-sdk": "^1.2.0",
+    "youtubei.js": "^17.0.1"
   },
   "devDependencies": {
     "@rootsdk/dev-tools": "*",

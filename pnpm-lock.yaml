@@ -11,6 +11,12 @@ importers:
       '@rootsdk/server-bot':
         specifier: '*'
         version: 0.17.0(@grpc/grpc-js@1.14.3)
+      '@spotify/web-api-ts-sdk':
+        specifier: ^1.2.0
+        version: 1.2.0
+      youtubei.js:
+        specifier: ^17.0.1
+        version: 17.0.1
     devDependencies:
       '@rootsdk/dev-tools':
         specifier: '*'
@@ -116,6 +122,9 @@ packages:
 
   '@rootsdk/server-bot@0.17.0':
     resolution: {integrity: sha512-2MfIATwIAreyyqUYveEoQBHz5zwX0xizW27s7FsMCBsX8d6ecXDMJM81uJZUgHfZk6t+gKz1eOyFpM0ezr2yIQ==}
+
+  '@spotify/web-api-ts-sdk@1.2.0':
+    resolution: {integrity: sha512-JUaebva3Ohwo5I5tuTqyW/FKGOMbb40YevJMySAOINRxP7qQ/AMjBzfJx0zeO6yS+wAPfQSoGNsZaUggHw8vsA==}
 
   '@tootallnate/once@1.1.2':
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
@@ -633,6 +642,10 @@ packages:
   merge-descriptors@1.0.3:
     resolution: {integrity: sha512-gaNvAS7TZ897/rVaZ0nMtAyxNyi/pdbjbAwUpFQpN70GqnVfOiXpeUUMKRBmzXaSQ8DdTX4/0ms62r2K+hE6mQ==}
 
+  meriyah@6.1.4:
+    resolution: {integrity: sha512-Sz8FzjzI0kN13GK/6MVEsVzMZEPvOhnmmI1lU5+/1cGOiK3QUahntrNNtdVeihrO7t9JpoH75iMNXg6R6uWflQ==}
+    engines: {node: '>=18.0.0'}
+
   methods@1.1.2:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==}
     engines: {node: '>= 0.6'}
@@ -1116,6 +1129,9 @@ packages:
     resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
     engines: {node: '>=12'}
 
+  youtubei.js@17.0.1:
+    resolution: {integrity: sha512-1lO4b8UqMDzE0oh2qEGzbBOd4UYRdxn/4PdpRM7BGTHxM6ddsEsKZTu90jp8V9FHVgC2h1UirQyqoqLiKwl+Zg==}
+
 snapshots:
 
   '@bufbuild/protobuf@2.11.0': {}
@@ -1255,6 +1271,8 @@ snapshots:
       - pg-native
       - supports-color
       - tedious
+
+  '@spotify/web-api-ts-sdk@1.2.0': {}
 
   '@tootallnate/once@1.1.2':
     optional: true
@@ -1826,6 +1844,8 @@ snapshots:
 
   merge-descriptors@1.0.3: {}
 
+  meriyah@6.1.4: {}
+
   methods@1.1.2: {}
 
   mime-db@1.52.0: {}
@@ -2343,3 +2363,8 @@ snapshots:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 21.1.1
+
+  youtubei.js@17.0.1:
+    dependencies:
+      '@bufbuild/protobuf': 2.11.0
+      meriyah: 6.1.4

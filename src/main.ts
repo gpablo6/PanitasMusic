@@ -1,7 +1,11 @@
-import { rootServer, RootBotStartState } from "@rootsdk/server-bot";
+import { rootServer, type RootBotStartState } from "@rootsdk/server-bot";
+import { initializeCommands } from "./commands/index.js";
+import { initializeVoiceMonitor } from "./voice/monitor.js";
 
-async function onStarting(state: RootBotStartState) {
-  // Run core logic for the bot, such as initializing commands, event listeners, etc.
+async function onStarting(_state: RootBotStartState) {
+  initializeCommands();
+  initializeVoiceMonitor();
+  console.log("[PanitasMusic] Bot started successfully");
 }
 
 (async () => {
